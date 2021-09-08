@@ -28,6 +28,7 @@ public class PureFunction {
         System.out.println(function.apply(3));
         System.out.println(function.apply(11));
         System.out.println(function1.apply(3));
+        System.out.println(function2.apply(2));
 
     }
 }

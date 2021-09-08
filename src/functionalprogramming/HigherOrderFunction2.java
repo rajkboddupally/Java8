@@ -34,6 +34,7 @@ public class HigherOrderFunction2 {
         sort(input, Comparator.reverseOrder());
         System.out.println("Comparator.reverseOrder()");
         print(input);
+
     }
 
     private static void sort(String[] input, Comparator<String> tComparator) {
