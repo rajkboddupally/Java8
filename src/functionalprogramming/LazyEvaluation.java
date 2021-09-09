@@ -24,9 +24,8 @@ public class LazyEvaluation {
 
         System.out.println("test " + test);
 
-        Function<Integer, Integer> square = new Function<Integer, Integer>() {
+        Function<Integer, Integer> square = new Function<>() {
             {
-                int temp = 5;
                 System.out.println("SQUARE");
             }
 
@@ -37,7 +36,7 @@ public class LazyEvaluation {
         };
 
 
-        Function<Integer, Integer> cube = new Function<Integer, Integer>() {
+        Function<Integer, Integer> cube = new Function<>() {
             {
                 System.out.println("CUBE");
             }
@@ -49,7 +48,7 @@ public class LazyEvaluation {
         };
 
         System.out.println(ifThenElse(true, square, cube, 3));
-        System.out.println(ifThenElse(false, square, cube, 3));
+        System.out.println(ifThenElse(false, square, cube, 5));
     }
 
     private static int ifThenElse(boolean flag, Function<Integer, Integer> square, Function<Integer, Integer> cube, int t) {
