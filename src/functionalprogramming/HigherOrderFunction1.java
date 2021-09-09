@@ -10,7 +10,7 @@ public class HigherOrderFunction1 {
 
     public static void main(String[] args) {
 
-        //Before Java 8 - highe rorder function. Anonymous inner class
+        //Before Java 8 - higher order function. Anonymous inner class
         File[] txtfiles = new File("C:\\Users\\adhvi\\Downloads").listFiles(new FileFilter() {
             public boolean accept(File pathname) {
                 return pathname.getPath().endsWith("txt");

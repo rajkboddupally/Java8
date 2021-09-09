@@ -34,6 +34,10 @@ public class HigherOrderFunction2 {
         sort(input, Comparator.reverseOrder());
         System.out.println("Comparator.reverseOrder()");
         print(input);
+        sort(input, String::compareTo);
+        System.out.println("Method reference String::compareTo");
+        print(input);
+
 
     }
 
