@@ -6,7 +6,7 @@ import java.util.concurrent.BlockingQueue;
 public class MyBlockingQueue {
 
 	public static void main(String[] args) {
-		BlockingQueue<String> bq = new ArrayBlockingQueue<String>(5);
+		BlockingQueue<String> bq = new ArrayBlockingQueue<String>(1);
 		new Thread(new Producer(bq)).start();
 		new Thread(new Consumer(bq)).start();
 
